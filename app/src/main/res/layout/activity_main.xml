@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageApp"
+        android:src="@drawable/pnp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageApp"
+
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:text="@string/title"/>
+
+    <TextView
+        android:id="@+id/txtMatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginHorizontal="20dp"
+
+        android:textColor="@color/green"
+        android:textStyle="bold"
+
+        android:text="@string/matakuliah"
+        />
+
+    <EditText
+        android:id="@+id/editMatkul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMatkul"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp"
+
+        android:textSize="17sp"
+        android:hint="@string/hint_matkul"/>
+
+    <TextView
+        android:id="@+id/dosenPengampu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editMatkul"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="17sp"
+
+        android:text="@string/dosen_pengampu"/>
+
+    <EditText
+        android:id="@+id/editDosenPengampu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dosenPengampu"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp"
+
+        android:textSize="17sp"
+        android:hint="@string/hint_dosenpengampu"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/editClass"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/editUsername"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+
+<!--        android:background="@drawable/edittext_background"-->
+<!--        android:backgroundTint="@color/white"-->
+
+<!--        android:textSize="17sp"-->
+<!--        android:hint="@string/hint_class"/>-->
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDosenPengampu"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+
+        android:backgroundTint="@color/white"
+
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="@string/btn_submit"
+        />
+
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginLeft="20dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="17sp"
+
+        android:text="@string/daftar_matkul"/>
+
+
+
+</RelativeLayout>

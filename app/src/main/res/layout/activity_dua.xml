@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/myaccent50">
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DuaActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+
+        android:text="@string/title2"/>
+
+    <TextView
+        android:id="@+id/txtNoKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/title"
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+
+        android:text="@string/txt1"/>
+    <EditText
+        android:id="@+id/edtNoKamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNoKamar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edittext_background"
+        />
+
+    <TextView
+        android:id="@+id/txtHargaKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edtNoKamar"
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+
+
+        android:text="@string/txt2"/>
+    <EditText
+        android:id="@+id/edtHargaKamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHargaKamar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edittext_background"
+        />
+
+    <TextView
+        android:id="@+id/txtTipeKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edtHargaKamar"
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+
+
+        android:text="@string/txt3"/>
+    <Spinner
+        android:id="@+id/spinTipeKamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTipeKamar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edittext_background"
+        />
+    <TextView
+        android:id="@+id/txtHariMenginap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/spinTipeKamar"
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+
+
+        android:text="@string/txt4"/>
+    <EditText
+        android:id="@+id/edtHariMenginap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHariMenginap"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edittext_background"
+        />
+    <TextView
+        android:id="@+id/txtBiayaTambahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+
+
+        android:layout_below="@+id/edtHariMenginap"
+
+        android:text="@string/txt5"/>
+    <EditText
+        android:id="@+id/edtBiayaTambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBiayaTambahan"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edittext_background"
+        />
+
+    <Button
+        android:id="@+id/proses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBiayaTambahan"
+        android:layout_margin="20dp"
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/green"
+
+        android:text="PROSES"/>
+
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proses"
+        android:layout_margin="20dp"
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+
+
+        android:text="OUTPUT"/>
+
+</RelativeLayout>
+</ScrollView>

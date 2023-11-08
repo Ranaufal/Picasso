@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_centerHorizontal="true"
+
+            android:textColor="@color/red"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:text="Transaksi Tiket"/>
+
+        <TableLayout
+            android:id="@+id/tbl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp">
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt1"/>
+                <EditText
+                    android:id="@+id/editId"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/at_txt1"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt2"/>
+                <EditText
+                    android:id="@+id/editNama"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/at_txt2"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtKotaAsal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt3"/>
+                <Spinner
+                    android:id="@+id/spinKotaAsal"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtKotaTujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt4"/>
+                <Spinner
+                    android:id="@+id/spinKotaTujuan"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtHargaTiket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt5"/>
+                <EditText
+                    android:id="@+id/editHargaTiket"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/at_txt5"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtCaraBayar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginVertical="10dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt6"/>
+                <RadioGroup
+                    android:id="@+id/rgBayar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/rbCash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:text="Cash"/>
+                    <RadioButton
+                        android:id="@+id/rbCreditCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:text="Credit Card"/>
+                    <RadioButton
+                        android:id="@+id/rbDebit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:text="Debit"/>
+                </RadioGroup>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtJumlahBeli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt7"/>
+                <EditText
+                    android:id="@+id/editJumlahBeli"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/at_txt7"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtJamKeberangkatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt8"/>
+                <Spinner
+                    android:id="@+id/spinJamKeberangkatan"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtTambahanBagasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/green"
+                    android:text="@string/at_txt9"/>
+                <TableLayout
+                    android:id="@+id/tbl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <CheckBox
+                            android:id="@+id/chkSuitecase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Suitecase"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/red"/>
+                    </TableRow>
+                    <TableRow>
+                        <CheckBox
+                            android:id="@+id/chkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Box"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/red"/>
+                    </TableRow>
+                    <TableRow>
+                        <CheckBox
+                            android:id="@+id/chkBag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bag"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/red"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnProses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/tbl1"
+
+            android:backgroundTint="@color/green"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="PROSES"
+            />
+
+        <TextView
+            android:id="@+id/txtOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnProses"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Output : "
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

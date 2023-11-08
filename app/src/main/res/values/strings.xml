@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="title">Politeknik Negeri Padang</string>
+
+    <string name="matakuliah">Mata Kuliah : </string>
+    <string name="dosen_pengampu">Dosen Pengampu : </string>
+    <string name="daftar_matkul">Data Perkuliahan</string>
+    <string name="hint_matkul">Masukkan Nama Matakuliah</string>
+    <string name="hint_dosenpengampu">Masukkan Dosen Pengampu</string>
+    <string name="btn_submit">SUBMIT</string>
+
+
+    <string name="title2">Hotel PNP</string>
+    <string name="txt1">No Kamar</string>
+    <string name="txt2">Harga Kamar</string>
+    <string name="txt3">Tipe Kamar</string>
+    <string name="txt4">Hari Menginap</string>
+    <string name="txt5">Biaya Tambahan</string>
+
+
+    <string name="at_txt1">Id Pelanggan</string>
+    <string name="at_txt2">Nama</string>
+    <string name="at_txt3">Kota Asal</string>
+    <string name="at_txt4">Kota Tujuan</string>
+    <string name="at_txt5">Harga Tiket</string>
+    <string name="at_txt6">Cara Bayar</string>
+    <string name="at_txt7">Jumlah Beli</string>
+    <string name="at_txt8">Jam Keberangkatan</string>
+    <string name="at_txt9">Tambahan Bagasi</string>
+
+
+</resources>
